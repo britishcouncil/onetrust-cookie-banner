@@ -11,27 +11,27 @@ I use the VScode extension [live server](https://marketplace.visualstudio.com/it
 The banner will attempt to grab these from the current page it is sat on. Otherwise it wil use the default values.
 
 ```css
---cookie-banner-background-color: #000;
+--cookie-banner-background-color:
 
 /* Accept button */
---cookie-accept-background-color: #ff0000;
---cookie-accept-hover-background-color: #b30000;
---cookie-accept-font-size: 40px;
+--cookie-accept-background-color:
+--cookie-accept-hover-background-color:
+--cookie-accept-font-size:
 
 /* Reject button */
---cookie-reject-background-color: #b3ff00;
---cookie-reject-hover-background-color: #89c203;
---cookie-reject-font-size: 12px;
+--cookie-reject-background-color:
+--cookie-reject-hover-background-color:
+--cookie-reject-font-size:
 
 /* Cookie settings button */
---cookie-settings-color: blue;
---cookie-settings-hover-color: #b30000;
+--cookie-settings-color:
+--cookie-settings-hover-color:
 
 /* Banner title */
---cookie-title-color: orange;
---cookie-title-font-size: 80px;
+--cookie-title-color:
+--cookie-title-font-size:
 
 /* Banner body text */
---cookie-description-color: purple;
---cookie-description-font-size: 40px;
+--cookie-description-color:
+--cookie-description-font-size:
 ```
