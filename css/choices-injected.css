@@ -1,0 +1,90 @@
+#onetrust-banner-sdk.otChoicesBnr{
+  width: 100%;
+  top: 20%;
+}
+
+#onetrust-banner-sdk #onetrust-policy-title {
+  font-size: 32px;
+  font-family: "BCSans", Arial, "Helvetica Neue", Helvetica, sans-serif;
+  color: #23085a;
+}
+#onetrust-banner-sdk #onetrust-policy-text,
+#onetrust-banner-sdk .ot-b-addl-desc {
+  font-family: Arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 150%;
+  color: #54565a;
+}
+#onetrust-banner-sdk.otChoicesBnr {
+		border-radius: 12px;
+}
+
+#onetrust-banner-sdk.otChoicesBnr {
+	max-width: 960px;
+}
+
+#onetrust-banner-sdk .banner-actions-container{
+	max-width: 100%;
+}
+
+
+@media only screen and (max-width: 960px) {
+	#onetrust-banner-sdk.has-reject-all-button .ot-bnr-save-handler{
+		display: block;
+		float: none;
+		margin-bottom: 1rem;
+	}
+
+	#onetrust-banner-sdk .banner-actions-container{
+		display: block;
+		float: none;
+	}
+}
+
+
+@media only screen and (max-width: 640px){
+	#onetrust-banner-sdk #onetrust-accept-btn-handler, #onetrust-banner-sdk #onetrust-reject-all-handler, #onetrust-banner-sdk #onetrust-pc-btn-handler, #onetrust-banner-sdk .ot-bnr-save-handler {
+    width: 100%;
+    margin-bottom: 10px;
+}}
+
+/* Button group */
+#onetrust-banner-sdk #onetrust-button-group-parent {
+  margin-bottom: 30px;
+}
+
+
+/* Buttons */
+#onetrust-banner-sdk button {
+  border-radius: 6px !important;
+  padding: 16px 40px !important;
+  font-family: Arial;
+  font-style: normal;
+  font-weight: bold !important;
+  font-size: 16px !important;
+  line-height: 100%;
+  /* identical to box height, or 16px */
+  text-align: center;
+  margin-bottom: 0;
+}
+/* Accept button */
+#onetrust-accept-btn-handler {
+  order: 1;
+  background-color: #23085a !important;
+}
+#onetrust-accept-btn-handler:hover {
+  background-color: #16043b !important;
+  opacity: 1 !important;
+}
+
+/* Reject button */
+#onetrust-reject-all-handler {
+  order: 2;
+  background-color: #23085a !important;
+}
+#onetrust-reject-all-handler:hover {
+  background-color: #16043b !important;
+  opacity: 1 !important;
+}
