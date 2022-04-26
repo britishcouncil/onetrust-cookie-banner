@@ -6,7 +6,7 @@ CSS styling for OneTrust cookie banners
 
 I use the VScode extension [live server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) to view the banner(s) in the browser.
 
-## CSS variables (subjet to change)
+## CSS variables (subject to change)
 
 The banner will attempt to grab these from the current page it is sat on. Otherwise it wil use the default values.
 
