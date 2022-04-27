@@ -134,7 +134,7 @@
   width: auto !important;
   color: var(--cookie-settings-color, #23085a) !important;
   background-color: transparent !important;
-  border: var(--cookie-settings-border-width, 2px) solid var(--cookie-settings-color, #23085a) !important;
+  border: var(--cookie-settings-border-width, 2px) solid var(--cookie-settings-border-color, #23085a) !important;
   font-size: var(--cookie-settings-font-size, 16px) !important;
 }
 
