@@ -23,16 +23,14 @@ The banner will attempt to grab these from the current page it is sat on. Otherw
 --cookie-reject-background-hover-color: #23085a;
 --cookie-reject-font-size: 16px;
 
-  --cookie-settings-color: blue;
-  --cookie-settings-hover-color: #b30000;
-  --cookie-settings-background-color: transparent;
-  --cookie-settings-background-hover-color: #eee;
-  --cookie-settings-border-color: #ccc;
-  --cookie-settings-font-size: 12px;
-
 /* Cookie settings button */
---cookie-settings-color: #ff00c8;
---cookie-settings-hover-color: #e203b2;
+--cookie-settings-color: #23085a;
+--cookie-settings-hover-color: #23085a;
+--cookie-settings-background-color: transparent;
+--cookie-settings-background-hover-color: #eee;
+--cookie-settings-border-color: #23085a;
+--cookie-settings-border-width: 2px;
+--cookie-settings-font-size: 16px;
 
 /* Banner title */
 --cookie-title-color: #23085a;
