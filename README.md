@@ -15,13 +15,20 @@ The banner will attempt to grab these from the current page it is sat on. Otherw
 
 /* Accept button */
 --cookie-accept-background-color: #23085a;
---cookie-accept-hover-background-color: #16043b;
+--cookie-accept-background-hover-color: #16043b;
 --cookie-accept-font-size: 16px;
 
 /* Reject button */
 --cookie-reject-background-color: #23085a;
---cookie-reject-hover-background-color: #23085a;
+--cookie-reject-background-hover-color: #23085a;
 --cookie-reject-font-size: 16px;
+
+  --cookie-settings-color: blue;
+  --cookie-settings-hover-color: #b30000;
+  --cookie-settings-background-color: transparent;
+  --cookie-settings-background-hover-color: #eee;
+  --cookie-settings-border-color: #ccc;
+  --cookie-settings-font-size: 12px;
 
 /* Cookie settings button */
 --cookie-settings-color: #ff00c8;
