@@ -1,33 +1,22 @@
 :root{
-  /* Banner container */
   --cookie-banner-background-color: #fff;
-
-  /* Banner title */
-  --cookie-title-color: #23085a;
-  --cookie-title-font-size: 32px;
-  
-  /* Banner body text */
-  --cookie-description-color: #54565a;
-  --cookie-description-font-size: 18px;
 
   /* Accept button */	
   --cookie-accept-color: #fff;
   --cookie-accept-hover-color: #fff;
   --cookie-accept-background-color: #23085a;
-  --cookie-accept-background-hover-color: #16043B;
+  --cookie-accept-background-hover-color: #23085a;
   --cookie-accept-border-color: #23085a;
   --cookie-accept-border-width: 2px;
-  --cookie-accept-border-radius: 6px;
   --cookie-accept-font-size: 16px;
 
   /* Reject button */
-  --cookie-reject-color: #fff;
-  --cookie-reject-hover-color: #fff;
-  --cookie-reject-background-color: #23085a;
-  --cookie-reject-background-hover-color: #16043B;
+  --cookie-reject-color: #23085a;
+  --cookie-reject-hover-color: #23085a;
+  --cookie-reject-background-color: transparent;
+  --cookie-reject-background-hover-color: #eee;
   --cookie-reject-border-color: #23085a;
   --cookie-reject-border-width: 2px;
-  --cookie-reject-border-radius: 6px;
   --cookie-reject-font-size: 16px;
   
   /* Cookie settings button */
@@ -37,9 +26,15 @@
   --cookie-settings-background-hover-color: #eee;
   --cookie-settings-border-color: #23085a;
   --cookie-settings-border-width: 2px;
-  --cookie-settings-border-radius: 6px;
   --cookie-settings-font-size: 16px;
-
+  
+  /* Banner title */
+  --cookie-title-color: #000;
+  --cookie-title-font-size: 32px;
+  
+  /* Banner body text */
+  --cookie-description-color: #54565a;
+  --cookie-description-font-size: 18px;
 }
 
 /* OneTrust container */
@@ -87,8 +82,14 @@
 }
 
 /* Button group */
+#onetrust-button-group{
+  display: flex;
+  padding-bottom: 12px;
+  gap: 12px;
+}
+
 #onetrust-banner-sdk #onetrust-button-group-parent {
-  margin-bottom: 18px;
+  margin-bottom: 30px;
 }
 
 /* Accept/Reject Button group */
@@ -97,17 +98,18 @@
   gap: 12px;
   float: left;
   max-width: 100%;
-  padding-bottom: 12px;
 }
 
 /* Buttons */
 #onetrust-banner-sdk button {
+  border-radius: 6px !important;
   padding: 16px 40px !important;
   font-family: Arial;
   font-style: normal;
   font-weight: bold !important;
   
   line-height: 100%;
+  /* identical to box height, or 16px */
   text-align: center;
   margin-bottom: 0;
 }
@@ -115,7 +117,6 @@
 #onetrust-accept-btn-handler {
   order: 1;
   border: var(--cookie-accept-background-color, #23085a) solid 2px !important;
-  border-radius: var(--cookie-accept-border-radius, 6px) !important;
   background-color: var(--cookie-accept-background-color, #23085a) !important;
   font-size: var(--cookie-accept-font-size, 16px) !important;
 }
@@ -127,14 +128,18 @@
 /* Reject button */
 #onetrust-reject-all-handler {
   order: 2;
-  background-color: var(--cookie-reject-background-color, #23085a) !important;
-  border: var(--cookie-reject-background-color, #23085a) solid 2px !important;
-  border-radius: var(--cookie-reject-border-radius, 6px) !important;
+  margin: 0 !important;
+  min-width: none !important;
+  width: auto !important;
+  color: var(--cookie-reject-color, #23085a) !important;
+  background-color: var(--cookie-reject-background-color, #fff) !important;
+  border: var(--cookie-reject-border-width, 2px) solid var(--cookie-reject-border-color, #23085a) !important;
   font-size: var(--cookie-reject-font-size, 16px) !important;
+  text-decoration: none !important;
 }
 #onetrust-reject-all-handler:hover {
-  background-color: #16043b !important;
-  background-color: var(--cookie-reject-background-hover-color, #23085a) !important;
+  color: var(--cookie-reject-hover-color, #23085a) !important;
+  background-color: var(--cookie-reject-background-hover-color, #eee) !important;
   opacity: 1 !important;
 }
 /* Cookie settings */
@@ -145,7 +150,6 @@
   color: var(--cookie-settings-color, #23085a) !important;
   background-color: transparent !important;
   border: var(--cookie-settings-border-width, 2px) solid var(--cookie-settings-border-color, #23085a) !important;
-  border-radius: var(--cookie-settings-border-radius, 6px) !important;
   font-size: var(--cookie-settings-font-size, 16px) !important;
   text-decoration: none !important;
 }
@@ -163,6 +167,11 @@
   #onetrust-consent-sdk {
     font-size: 16px;
   }
+
+    /* button group */
+    #onetrust-button-group{
+      flex-direction: column;
+    }
 
   /* cookie banner Title */
   #onetrust-banner-sdk #onetrust-policy-title {

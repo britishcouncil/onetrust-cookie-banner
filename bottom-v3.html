@@ -8,7 +8,7 @@
     <title>Document</title>
 
     <link rel="stylesheet" href="css/onetrust.css" />
-    <link rel="stylesheet" href="css/bottom-injected.css" />
+    <link rel="stylesheet" href="css/bottom-injected-v3.css" />
 
     <style>
       body {
@@ -22,35 +22,24 @@
   <body>
     <pre>
       :root{
-        /* Banner container */
         --cookie-banner-background-color: #fff;
-      
-        /* Banner title */
-        --cookie-title-color: #23085a;
-        --cookie-title-font-size: 32px;
-        
-        /* Banner body text */
-        --cookie-description-color: #54565a;
-        --cookie-description-font-size: 18px;
       
         /* Accept button */	
         --cookie-accept-color: #fff;
         --cookie-accept-hover-color: #fff;
         --cookie-accept-background-color: #23085a;
-        --cookie-accept-background-hover-color: #16043B;
+        --cookie-accept-background-hover-color: #23085a;
         --cookie-accept-border-color: #23085a;
         --cookie-accept-border-width: 2px;
-        --cookie-accept-border-radius: 6px;
         --cookie-accept-font-size: 16px;
       
         /* Reject button */
-        --cookie-reject-color: #fff;
-        --cookie-reject-hover-color: #fff;
-        --cookie-reject-background-color: #23085a;
-        --cookie-reject-background-hover-color: #16043B;
+        --cookie-reject-color: #23085a;
+        --cookie-reject-hover-color: #23085a;
+        --cookie-reject-background-color: transparent;
+        --cookie-reject-background-hover-color: #eee;
         --cookie-reject-border-color: #23085a;
         --cookie-reject-border-width: 2px;
-        --cookie-reject-border-radius: 6px;
         --cookie-reject-font-size: 16px;
         
         /* Cookie settings button */
@@ -60,9 +49,15 @@
         --cookie-settings-background-hover-color: #eee;
         --cookie-settings-border-color: #23085a;
         --cookie-settings-border-width: 2px;
-        --cookie-settings-border-radius: 6px;
         --cookie-settings-font-size: 16px;
-      
+        
+        /* Banner title */
+        --cookie-title-color: #23085a;
+        --cookie-title-font-size: 32px;
+        
+        /* Banner body text */
+        --cookie-description-color: #54565a;
+        --cookie-description-font-size: 18px;
       }
     </pre>
     <div id="onetrust-consent-sdk">
@@ -277,10 +272,10 @@
                     <path
                       fill="#656565"
                       d="M213.13,222.409L351.88,83.653c7.05-7.043,10.567-15.657,10.567-25.841c0-10.183-3.518-18.793-10.567-25.835
-			l-21.409-21.416C323.432,3.521,314.817,0,304.637,0s-18.791,3.521-25.841,10.561L92.649,196.425
-			c-7.044,7.043-10.566,15.656-10.566,25.841s3.521,18.791,10.566,25.837l186.146,185.864c7.05,7.043,15.66,10.564,25.841,10.564
-			s18.795-3.521,25.834-10.564l21.409-21.412c7.05-7.039,10.567-15.604,10.567-25.697c0-10.085-3.518-18.746-10.567-25.978
-			L213.13,222.409z"
+      l-21.409-21.416C323.432,3.521,314.817,0,304.637,0s-18.791,3.521-25.841,10.561L92.649,196.425
+      c-7.044,7.043-10.566,15.656-10.566,25.841s3.521,18.791,10.566,25.837l186.146,185.864c7.05,7.043,15.66,10.564,25.841,10.564
+      s18.795-3.521,25.834-10.564l21.409-21.412c7.05-7.039,10.567-15.604,10.567-25.697c0-10.085-3.518-18.746-10.567-25.978
+      L213.13,222.409z"
                     ></path>
                   </g>
                 </svg>
