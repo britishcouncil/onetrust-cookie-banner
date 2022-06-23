@@ -19,6 +19,7 @@
   --cookie-accept-border-width: 2px;
   --cookie-accept-border-radius: 6px;
   --cookie-accept-font-size: 16px;
+  --cookie-accept-order: 1;
 
   /* Reject button */
   --cookie-reject-color: #fff;
@@ -29,6 +30,7 @@
   --cookie-reject-border-width: 2px;
   --cookie-reject-border-radius: 6px;
   --cookie-reject-font-size: 16px;
+  --cookie-reject-order: 2;
   
   /* Cookie settings button */
   --cookie-settings-color: #23085a;
@@ -87,8 +89,14 @@
 }
 
 /* Button group */
+#onetrust-button-group{
+  display: flex;
+  padding-bottom: 12px;
+  gap: 12px;
+}
+
 #onetrust-banner-sdk #onetrust-button-group-parent {
-  margin-bottom: 18px;
+  margin-bottom: 30px;
 }
 
 /* Accept/Reject Button group */
@@ -97,7 +105,6 @@
   gap: 12px;
   float: left;
   max-width: 100%;
-  padding-bottom: 12px;
 }
 
 /* Buttons */
@@ -106,14 +113,16 @@
   font-family: Arial;
   font-style: normal;
   font-weight: bold !important;
+  text-align: center !important;
+  line-height: 150% !important;
   
   line-height: 100%;
   text-align: center;
-  margin-bottom: 0;
+  margin: 0 !important;
 }
 /* Accept button */
 #onetrust-accept-btn-handler {
-  order: 1;
+  order: var(--cookie-accept-order, 1);
   border: var(--cookie-accept-background-color, #23085a) solid 2px !important;
   border-radius: var(--cookie-accept-border-radius, 6px) !important;
   background-color: var(--cookie-accept-background-color, #23085a) !important;
@@ -126,7 +135,7 @@
 
 /* Reject button */
 #onetrust-reject-all-handler {
-  order: 2;
+  order: var(--cookie-reject-order, 2);
   background-color: var(--cookie-reject-background-color, #23085a) !important;
   border: var(--cookie-reject-background-color, #23085a) solid 2px !important;
   border-radius: var(--cookie-reject-border-radius, 6px) !important;
@@ -148,6 +157,8 @@
   border-radius: var(--cookie-settings-border-radius, 6px) !important;
   font-size: var(--cookie-settings-font-size, 16px) !important;
   text-decoration: none !important;
+  text-align: center !important;
+  line-height: 150% !important;
 }
 
 #onetrust-pc-btn-handler.cookie-setting-link:hover {
@@ -163,6 +174,12 @@
   #onetrust-consent-sdk {
     font-size: 16px;
   }
+
+    /* button group */
+    #onetrust-button-group{
+      flex-direction: column;
+    }
+  
 
   /* cookie banner Title */
   #onetrust-banner-sdk #onetrust-policy-title {
