@@ -93,6 +93,7 @@
   display: flex;
   padding-bottom: 12px;
   gap: 12px;
+  float: none !important;
 }
 
 #onetrust-banner-sdk #onetrust-button-group-parent {
@@ -175,11 +176,10 @@
     font-size: 16px;
   }
 
-    /* button group */
-    #onetrust-button-group{
-      flex-direction: column;
-    }
-  
+  /* button group */
+  #onetrust-button-group{
+     flex-direction: column;
+  }
 
   /* cookie banner Title */
   #onetrust-banner-sdk #onetrust-policy-title {
