@@ -3,7 +3,7 @@
   --cookie-banner-background-color: #fff;
 
   /* Banner title */
-  --cookie-title-color: #23085a;
+  --cookie-title-color: #000;
   --cookie-title-font-size: 32px;
   
   /* Banner body text */
@@ -122,14 +122,18 @@
   margin: 0 !important;
 }
 /* Accept button */
-#onetrust-accept-btn-handler {
+#onetrust-accept-btn-handler,
+#accept-recommended-btn-handler,
+.save-preference-btn-handler {
   order: var(--cookie-accept-order, 1);
   border: var(--cookie-accept-background-color, #23085a) solid 2px !important;
   border-radius: var(--cookie-accept-border-radius, 6px) !important;
   background-color: var(--cookie-accept-background-color, #23085a) !important;
   font-size: var(--cookie-accept-font-size, 16px) !important;
 }
-#onetrust-accept-btn-handler:hover {
+#onetrust-accept-btn-handler:hover,
+#accept-recommended-btn-handler:hover,
+.save-preference-btn-handler:hover {
   background-color: var(--cookie-accept-background-hover-color, #16043b) !important;
   opacity: 1 !important;
 }
@@ -202,4 +206,60 @@
   #onetrust-banner-sdk button {
     width: 100%;
   }
+}
+
+
+/* --- Cookie settings pop up --- */
+
+/* Container */
+#onetrust-pc-sdk{
+  font-family: Arial;
+  font-style: normal;
+}
+
+#onetrust-pc-sdk.otPcCenter{
+  width: 100% !important;
+  max-width: 900px !important;
+}
+
+/* H2, H3 */
+#ot-pc-title,
+#ot-category-title{
+  color: black !important;
+}
+
+/* H2 */
+#onetrust-pc-sdk #ot-pc-title {
+  color: var(--cookie-title-color, #000) !important;
+  float: left;
+  font-size: 1.5rem !important;
+  line-height: 1.5;
+  margin-bottom: 10px;
+  margin-top: 24px !important;
+  width: 100%;
+}
+
+/* Description */
+#onetrust-pc-sdk #ot-pc-desc{
+  font-size: 1rem !important;
+  color: var( --cookie-description-color, #54565a) !important;
+}
+
+
+#onetrust-pc-sdk button{
+  padding: 16px 40px !important;
+  font-family: Arial;
+  font-style: normal;
+  font-weight: bold !important;
+  text-align: center !important;
+  line-height: 150% !important;
+  
+  line-height: 100%;
+  text-align: center;
+}
+
+/* footer */
+#onetrust-pc-sdk .ot-pc-footer{
+  background-color: white !important;
+  z-index: 1 !important;
 }

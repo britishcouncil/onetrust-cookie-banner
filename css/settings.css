@@ -1,0 +1,55 @@
+/* --- Cookie settings pop up --- */
+
+/* Container */
+#onetrust-pc-sdk{
+  font-family: Arial;
+  font-style: normal;
+}
+
+#onetrust-pc-sdk.otPcCenter{
+  width: 100%;
+  max-width: 900px !important;
+  /* margin: 20px; */
+}
+
+/* H2, H3 */
+#ot-pc-title,
+#ot-category-title{
+  color: black !important;
+}
+
+/* H2 */
+#onetrust-pc-sdk #ot-pc-title {
+  color: var(--cookie-title-color, #000) !important;
+  float: left;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  margin-bottom: 10px;
+  margin-top: 24px;
+  width: 100%;
+}
+
+/* Description */
+#onetrust-pc-sdk #ot-pc-desc{
+  font-size: 1rem;
+  color: var( --cookie-description-color, #54565a) !important;
+}
+
+
+#onetrust-pc-sdk button{
+  padding: 16px 40px !important;
+  font-family: Arial;
+  font-style: normal;
+  font-weight: bold !important;
+  text-align: center !important;
+  line-height: 150% !important;
+  
+  line-height: 100%;
+  text-align: center;
+}
+
+/* footer */
+#onetrust-pc-sdk .ot-pc-footer{
+  background-color: white;
+  z-index: 1;
+}
