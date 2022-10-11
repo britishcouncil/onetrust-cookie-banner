@@ -205,4 +205,43 @@
   #onetrust-banner-sdk button {
     width: 100%;
   }
+
+
+  #onetrust-banner-sdk #onetrust-policy-text{
+    max-height: 400px;
+    max-height: 50vh;
+    overflow: auto;
+
+  background:
+  /* Shadow covers */
+  linear-gradient(white 30%, rgba(255,255,255,0)),
+  linear-gradient(rgba(255,255,255,0), white 70%) 0 100%,
+  
+  /* Shadows */
+  radial-gradient(50% 0, farthest-side, rgba(0,0,0,.4), rgba(0,0,0,0)),
+  radial-gradient(50% 100%,farthest-side, rgba(0,0,0,.4), rgba(0,0,0,0)) 0 100%;
+
+  background:
+    /* Shadow covers */
+    linear-gradient(white 30%, rgba(255,255,255,0)),
+    linear-gradient(rgba(255,255,255,0), white 70%) 0 100%,
+    
+    /* Shadows */
+    radial-gradient(farthest-side at 50% 0, rgba(0,0,0,.4), rgba(0,0,0,0)),
+    radial-gradient(farthest-side at 50% 100%, rgba(0,0,0,.4), rgba(0,0,0,0)) 0 100%;
+
+  background-repeat: no-repeat;
+  background-color: white;
+  background-size: 100% 40px, 100% 40px, 100% 14px, 100% 14px;
+
+  /* Opera doesn't support this in the shorthand */
+  background-attachment: local, local, scroll, scroll;
+  }
+  
+  #onetrust-banner-sdk #onetrust-button-group-parent {
+    margin-bottom: 0;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+  }
 }
