@@ -4,7 +4,7 @@ import { defineConfig } from "vite";
 import fg from "fast-glob";
 import { parse, resolve } from "path";
 
-const pagesGlob = await fg("pages/**/*.html", {
+const pagesGlob = await fg("src/pages/**/*.html", {
     dot: false,
 });
 
@@ -30,7 +30,7 @@ export default defineConfig(({ command, mode }) => {
     };
 
     return {
-        root: "",
+        root: "src",
         server: {
             open: "/pages/index.html",
         },

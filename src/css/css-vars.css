@@ -1,0 +1,46 @@
+:root{
+    /* Banner container */
+    --cookie-banner-background-color: #fff;
+  
+    /* Banner title */
+    --cookie-title-color: #000;
+    --cookie-title-font-size: 32px;
+    
+    /* Banner body text */
+    --cookie-description-color: #54565a;
+    --cookie-description-font-size: 18px;
+  
+    /* Accept button */	
+    --cookie-accept-color: #fff;
+    --cookie-accept-hover-color: #fff;
+    --cookie-accept-background-color: #23085a;
+    --cookie-accept-background-hover-color: #16043B;
+    --cookie-accept-border-color: #23085a;
+    --cookie-accept-border-width: 2px;
+    --cookie-accept-border-radius: 6px;
+    --cookie-accept-font-size: 16px;
+    --cookie-accept-order: 1;
+  
+    /* Reject button */
+    --cookie-reject-color: #fff;
+    --cookie-reject-hover-color: #fff;
+    --cookie-reject-background-color: #23085a;
+    --cookie-reject-background-hover-color: #16043B;
+    --cookie-reject-border-color: #23085a;
+    --cookie-reject-border-width: 2px;
+    --cookie-reject-border-radius: 6px;
+    --cookie-reject-font-size: 16px;
+    --cookie-reject-order: 2;
+    
+    /* Cookie settings button */
+    --cookie-settings-color: #23085a;
+    --cookie-settings-hover-color: #23085a;
+    --cookie-settings-background-color: transparent;
+    --cookie-settings-background-hover-color: #eee;
+    --cookie-settings-border-color: #23085a;
+    --cookie-settings-border-width: 2px;
+    --cookie-settings-border-radius: 6px;
+    --cookie-settings-font-size: 16px;
+  
+  }
+  

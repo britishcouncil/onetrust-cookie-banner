@@ -7,9 +7,8 @@
 }
 
 #onetrust-pc-sdk.otPcCenter{
-  width: 100%;
+  width: 100% !important;
   max-width: 900px !important;
-  /* margin: 20px; */
 }
 
 /* H2, H3 */
@@ -22,16 +21,16 @@
 #onetrust-pc-sdk #ot-pc-title {
   color: var(--cookie-title-color, #000) !important;
   float: left;
-  font-size: 1.5rem;
+  font-size: 1.5rem !important;
   line-height: 1.5;
   margin-bottom: 10px;
-  margin-top: 24px;
+  margin-top: 24px !important;
   width: 100%;
 }
 
 /* Description */
 #onetrust-pc-sdk #ot-pc-desc{
-  font-size: 1rem;
+  font-size: 1rem !important;
   color: var( --cookie-description-color, #54565a) !important;
 }
 
@@ -50,6 +49,16 @@
 
 /* footer */
 #onetrust-pc-sdk .ot-pc-footer{
-  background-color: white;
-  z-index: 1;
+  background-color: white !important;
+  z-index: 1 !important;
+}
+
+.ot-pc-logo img{
+  max-width: 130px !important;
+}
+
+@media only screen and (max-width: 640px) {
+  .ot-btn-container,#onetrust-pc-sdk .ot-pc-footer{
+    max-height: none !important;
+  }
 }
